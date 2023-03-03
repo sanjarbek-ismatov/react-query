@@ -3,7 +3,7 @@ import { configureStore } from "@reduxjs/toolkit";
 const api = createApi({
   reducerPath: "jsonplaceholder",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://jsonplaceholder.typicode.com",
+    baseUrl: "http://localhost:5000",
   }),
   endpoints(build) {
     return {

@@ -1,6 +1,5 @@
 import React from "react";
-import { useQuery, useMutation } from "react-query";
-import { useLazyPostsQuery, usePostsQuery } from "./store";
+import { usePostsQuery } from "./store";
 const RTK = () => {
   const { isLoading, isFetching, refetch, data } = usePostsQuery(null);
   return (

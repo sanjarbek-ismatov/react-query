@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import App from "./App";
 import RTK from "./RTK";
 import { store } from "./store";
+import SWR from "./SWR";
 const Index = () => {
   const queryClient = new QueryClient();
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Provider store={store}>
         <RTK />
       </Provider>
+      <SWR />
     </div>
   );
 };

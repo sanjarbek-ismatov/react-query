@@ -3,10 +3,7 @@ import { useQuery, useMutation } from "react-query";
 const App = () => {
   const { isLoading, isSuccess, data, isFetching, refetch } = useQuery(
     "posts",
-    () =>
-      fetch("https://jsonplaceholder.typicode.com/posts").then((res) =>
-        res.json()
-      )
+    () => fetch("http://localhost:5000/posts").then((res) => res.json())
   );
   return (
     <div>
